@@ -1,16 +1,12 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require react
+//= require components
+//= require react_ujs
+//= require ./graphql/vendor/codemirror
+//= require ./graphql/vendor/javascript-mode
+//= require ./graphql/vendor/code_mirror_editor
+//= require ./graphql/vendor/es6-promise
+//= require ./graphql/vendor/fetch
+//= require_tree ./graphql/components
+//= require ./graphql/query_store
+//= require_self
+QueryStore.start()
