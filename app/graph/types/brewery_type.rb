@@ -15,4 +15,20 @@ BreweryType = GraphQL::ObjectType.define do
   field :filepath, !types.String
   field :description, !types.String
 
+  field :beers do
+    type -> { types[!BeerType] }
+    description "Beers made by this Brewery"
+    resolve -> (obj, args, ctx) do
+      obj.beers
+    end
+  end
+
+  field :styles do
+    type -> { types[!StyleType] }
+    description "Styles made by this Brewery"
+    resolve -> (obj, args, ctx) do
+      obj.styles
+    end
+  end
+
 end

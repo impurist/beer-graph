@@ -4,6 +4,6 @@ StyleType = GraphQL::ObjectType.define do
 
   field :id, !types.ID
   field :name, !types.String
-  field :category, types[!CategoryType]
+  field :category, !CategoryType
 
 end

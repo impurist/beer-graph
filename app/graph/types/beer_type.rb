@@ -10,8 +10,8 @@ BeerType = GraphQL::ObjectType.define do
   field :upc, !types.String
   field :filepath, !types.String
   field :description, !types.String
-  field :brewery, types[!BreweryType]
-  field :category, types[!CategoryType]
-  field :style, types[!StyleType]
+  field :brewery, !BreweryType
+  field :category, !CategoryType
+  field :style, !StyleType
 
 end
