@@ -6,21 +6,15 @@
 
 * cd beer-graph
 * bundle
-
 * edit config/database.yml for your postgres installation
-
 * rake db:create
 * rake db:migrate
 * rake db:seed
-
 * rails s
 
 * open a browser and navigate to http://localhost:3000
-
 * You will see GraphiQL - a react component for GraphQL
-
 * try the following query 
-
 { 
   beers{
     name
@@ -30,5 +24,7 @@
     }
   }
 }
+
+
 
 
