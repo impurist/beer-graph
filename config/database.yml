@@ -23,10 +23,3 @@ test:
   <<: *default
   database: beer_graph_test
 
-production:
-    adapter: postgresql
-    encoding: unicode
-    host: ec2-54-83-204-228.compute-1.amazonaws.com
-    database: d4v5isf03vd7s1
-    username: oqtidgftpabppy
-    password: FrD62IHFa5dJeaiBK1FBP2PtYL
